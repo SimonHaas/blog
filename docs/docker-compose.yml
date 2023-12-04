@@ -1,0 +1,8 @@
+version: '2'
+services:
+  blog:
+    build: .
+    volumes:
+      - ./_site:/usr/share/nginx/html
+    ports:
+      - 8080:80
